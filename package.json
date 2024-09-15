@@ -1,13 +1,15 @@
 {
   "name": "chat-app",
   "version": "0.1.0",
+  "homepage": "https://ro5ti5lav.github.io/chat-app",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && gh-pages -d out"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
