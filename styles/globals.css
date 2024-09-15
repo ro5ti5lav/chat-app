@@ -1,0 +1,94 @@
+/* styles/globals.css */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chat-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.chat-window {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.chat-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.message-input {
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.message-item {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.positive-badge {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.negative-badge {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.message-list {
+    max-height: 400px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+    /* Последние сообщения сверху */
+}
+
+/* Для Chrome, Safari и Edge */
+.message-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Для Firefox */
+.message-list {
+    scrollbar-width: none;
+    /* Скрытие полосы прокрутки в Firefox */
+}
+
+.message-list {
+    -ms-overflow-style: none;
+    /* Для IE и Edge */
+}
+
+header {
+    background-color: #007bff;
+    /* Цвет фона */
+    color: #fff;
+    /* Цвет текста */
+    padding: 20px 0;
+    /* Отступы */
+    text-align: center;
+    /* Выравнивание текста по центру */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
