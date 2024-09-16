@@ -3,6 +3,7 @@ import pusher from '../lib/pusher';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
     const [messages, setMessages] = useState([]);
@@ -41,6 +42,8 @@ export default function Home() {
             sendMessage();
         }
     };
+
+    <SpeedInsights />
 
     return (
         <div className="container mt-4">
