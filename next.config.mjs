@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-
-    basePath: '/chat-app',
-    assetPrefix: '/chat-app/', // Используется для корректного размещения ресурсов на GitHub Pages
-    trailingSlash: true, // Добавляет косую черту в конце всех URL
+    reactStrictMode: true,
+    swcMinify: true,  // Включение минимизации
 };
+
 
 export default nextConfig;
